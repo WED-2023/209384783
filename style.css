@@ -7,19 +7,25 @@
 }
 body {
 	font-family: montserrat;
+	background-image: url(images/background.jpeg);
+	background-size: cover;
+	background-position: center;
+	height: calc(100vh - 80px);
 }
 nav {
-	background: #0082e6;
+	background: #33b5e5;
 	height: 80px;
 	width: 100%;
 	position: fixed;
 }
-label.logo {
-	color: white;
-	font-size: 35px;
-	line-height: 80px;
-	padding: 0 76px;
-	font-weight: bold;
+nav img.logo {
+	/* color: white; */
+	/* font-size: 35px; */
+	float: left;
+	width: 80px;
+    height: 80px;
+	padding: 0 0px;
+	/* font-weight: bold; */
 }
 nav ul {
 	float: right;
@@ -32,14 +38,14 @@ nav ul li {
 }
 nav ul li a {
 	color: white;
-	font-size: 15px;
+	font-size: 21px;
 	padding: 7px 13px;
 	border-radius: 3px;
 	text-transform: uppercase;
 	text-decoration: none;
 }
 a:hover {
-	background: #1b9bff;
+	background: #0099cc;
 	transition: .5s;
 }
 .checkbtn {
@@ -85,7 +91,7 @@ a:hover {
 	nav ul li a {
 		font-size: 20px;
 	}
-	a:hover, a.active {
+	a:hover{
 		background: none;
 		color: #0082e6;
 	}
@@ -94,8 +100,29 @@ a:hover {
 	}
 }
 section {
-	background: url(bg1.jpg) no-repeat;
-	background-size: cover;
-	height: calc(100vh - 80px);
-
+    padding-top: 100px;
 }
+section h1 {
+	padding: 8px;
+	margin-bottom: 7px;
+	margin-top: 0;
+	background-color: #33b5e5;
+	color: white;
+	text-align: center;
+	font-size: 21px; /* Adjust the font size as needed */
+	text-transform: uppercase;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+section img {
+	max-width: 100%;
+	margin-left: 45px;
+	height: 450px;
+}
+section div {
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 0;
+	font-family: Tahoma, sans-serif;
+	line-height: 1.6;
+}
+

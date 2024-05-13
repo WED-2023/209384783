@@ -15,7 +15,10 @@
     <label for="check" class="checkbtn">
       <i class="fa-solid fa-bars"></i>
     </label>
-    <label class="logo">DesignX</label>
+    <a href="#top">
+      <img class="logo" src="images/logo_mr_bean.jpeg" alt="Logo">
+    </a>
+    <!-- <label class="logo">DesignX</label> -->
     <ul id="menu">
       <li><a class="active" href="#about">About Me</a></li>
       <li><a href="#photos">My Photos</a></li>
@@ -27,58 +30,30 @@
     </ul>
   </nav>
 
-<!-- <div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div> -->
+  <div id="top"></div>
+
+  <section>
+      <img class="30_pic" src="images/top_pic.jpeg" alt="30_pic">
+  </section>
 
 <section id="about" class="section"> 
+  <h1>about me</h1>
   <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  about me
-  <br/>
-  <br/>
-<br/>
+  <div class="description">
+    <p dir="rtl"></pdir>
+      מיסטר בִּין  היא סדרת טלוויזיה קומית בריטית, בכיכובו של רואן אטקינסון.
+      בין הוא אדם ילדותי ואנוכי, שמתנהל בחייו היומיומיים בצורה המעלה גיחוך, ובפרט נוטה לסבך מצבים פשוטים, ולהיחלץ מהסיבוך בדרכים עוקפות ויוצאות דופן. הוא מתגורר בגפו בדירה לונדונית קטנה, ובדרך כלל חברתו היחידה היא בובת הדובי האהובה עליו, טדי. הוא נוהג ללבוש תמיד ז'קט טוויד אפור, מכנסיים מעט קצרים מדי, חולצה לבנה ועניבה, וכמו כן שיערו מסורק תמיד לצד. לבושו ותסרוקתו מזכירים מראה אופייני של תלמיד בבית ספר אנגלי בשנות ה-50. מיסטר בין כמעט שאינו מדבר, וכאשר הוא מוציא מילים מפיו, אלו מילים ספורות, שאותן הוא מבטא בקול לא ברור ונמוך באופן מוקצן וקומי. שמו הפרטי ותחום עיסוקו, אם הוא אכן בעל תעסוקה, אינם מוזכרים כלל במהלך התוכנית (בפני אחרים הוא מציג את עצמו בשם "בין").
+      פעמים רבות נראה שמיסטר בין אינו מודע להיבטים בסיסיים הנוגעים לאופן שבו נוהג העולם, והמערכונים בתוכנית מציגים את דרכי ההתמודדות הייחודיות שלו עם פעולות שלרוב נחשבות טריוויאליות ופשוטות, כמו בילוי בבריכת שחייה, הפעלת טלוויזיה, צביעת הקירות בדירתו, או תפילה בכנסייה. כך למשל, על מנת לצבוע את קירות דירתו, הוא מכסה את כל החפצים בדירתו, מלבד הקירות, בנייר עיתון, ומפוצץ פחית צבע באמצעות זיקוק, כך שנוזל הצבע מתפזר לכל עבר בדירה. ההומור במערכונים נובע בעיקר מהפתרונות היצירתיים (והאבסורדיים לרוב) שבִּין מציג לבעיות בהן הוא נתקל, מהאנוכיות ומצרות המחשבה שהוא מפגין בפתרון הבעיות, ולפרקים מתעלוליו שפוגעים בזולת אך מסייעים לו.
+    </p>
+  </div>
 </section>
 
 <section id="photos" class="section">
+  <h1>my photos</h1>
   <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  my photos
-  <br/>
+  <div class="Photo_Album">
+    
+  </div>
   <br/>
   <br/>
 </section>
@@ -211,6 +186,15 @@
    $(document).scroll(function() {
       $('#menu').toggle($(this).scrollTop()>1000)
    });
-   </script>
+
+   // JavaScript to handle scrolling to the top of the page
+  document.querySelector('.logo').addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Smooth scrolling animation
+    });
+  });
+
+  </script>
   </body>
   </html>
