@@ -17,6 +17,7 @@ nav {
 	height: 80px;
 	width: 100%;
 	position: fixed;
+	z-index: 1000;
 }
 nav img.logo {
 	/* color: white; */
@@ -102,7 +103,19 @@ a:hover {
 section {
     padding-top: 100px;
 }
-section h1 {
+section img {
+	max-width: 100%;
+	margin-left: 45px;
+	height: 450px;
+}
+section div p {
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 0;
+	font-family: Tahoma, sans-serif;
+	line-height: 1.6;
+}
+.section h1 {
 	padding: 8px;
 	margin-bottom: 7px;
 	margin-top: 0;
@@ -113,16 +126,5 @@ section h1 {
 	text-transform: uppercase;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
-section img {
-	max-width: 100%;
-	margin-left: 45px;
-	height: 450px;
-}
-section div {
-	margin-left: 100px;
-	margin-right: 100px;
-	margin-bottom: 0;
-	font-family: Tahoma, sans-serif;
-	line-height: 1.6;
-}
+
 

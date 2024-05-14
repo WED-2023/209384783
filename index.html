@@ -6,6 +6,7 @@
   <title>Responsive Site</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="image_rotator.css" />
   <script src="https://kit.fontawesome.com/7f6855da14.js" crossorigin="anonymous"></script>
 </head>
 
@@ -38,8 +39,8 @@
 
 <section id="about" class="section"> 
   <h1>about me</h1>
-  <br/>
   <div class="description">
+    <br/>
     <p dir="rtl"></pdir>
       מיסטר בִּין  היא סדרת טלוויזיה קומית בריטית, בכיכובו של רואן אטקינסון.
       בין הוא אדם ילדותי ואנוכי, שמתנהל בחייו היומיומיים בצורה המעלה גיחוך, ובפרט נוטה לסבך מצבים פשוטים, ולהיחלץ מהסיבוך בדרכים עוקפות ויוצאות דופן. הוא מתגורר בגפו בדירה לונדונית קטנה, ובדרך כלל חברתו היחידה היא בובת הדובי האהובה עליו, טדי. הוא נוהג ללבוש תמיד ז'קט טוויד אפור, מכנסיים מעט קצרים מדי, חולצה לבנה ועניבה, וכמו כן שיערו מסורק תמיד לצד. לבושו ותסרוקתו מזכירים מראה אופייני של תלמיד בבית ספר אנגלי בשנות ה-50. מיסטר בין כמעט שאינו מדבר, וכאשר הוא מוציא מילים מפיו, אלו מילים ספורות, שאותן הוא מבטא בקול לא ברור ונמוך באופן מוקצן וקומי. שמו הפרטי ותחום עיסוקו, אם הוא אכן בעל תעסוקה, אינם מוזכרים כלל במהלך התוכנית (בפני אחרים הוא מציג את עצמו בשם "בין").
@@ -50,9 +51,20 @@
 
 <section id="photos" class="section">
   <h1>my photos</h1>
-  <br/>
-  <div class="Photo_Album">
-    
+  <div class="slide hi-slide">
+    <div class="hi-prev"></div>
+    <div class="hi-next"></div>
+    <ul>
+      <li><img src="images/slide_pic_1.jpeg" alt=""></li>
+      <li><img src="images/slide_pic_2.jpeg" alt=""></li>
+      <li><img src="images/slide_pic_3.jpeg" alt=""></li>
+      <li><img src="images/slide_pic_4.jpeg" alt=""></li>
+      <li><img src="images/slide_pic_5.jpeg" alt=""></li>
+      <li><img src="images/slide_pic_1.jpeg" alt=""></li>
+      <li><img src="images/slide_pic_2.jpeg" alt=""></li>
+      <li><img src="images/slide_pic_3.jpeg" alt=""></li>
+    </ul>
+    <br/>
   </div>
   <br/>
   <br/>
@@ -181,8 +193,7 @@
       $('html,body').scrollTo(this.hash,this.hash); 
     });
   });
-  </script>
-  <script type="text/javascript">
+
    $(document).scroll(function() {
       $('#menu').toggle($(this).scrollTop()>1000)
    });
@@ -194,7 +205,12 @@
       behavior: 'smooth' // Smooth scrolling animation
     });
   });
+  </script>
 
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="jquery.hislide.js"></script>
+  <script>
+    $('.slide').hiSlide();
   </script>
   </body>
   </html>
