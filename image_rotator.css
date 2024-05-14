@@ -1,14 +1,15 @@
 .hi-slide {
     list-style: none;
     position: relative;
-    width: 60%;
+    width: 62%;
     height: 0px;
     border-radius: 50px;
-    margin: 100px auto 0;
+    margin: 5% auto 0;
+    margin-bottom: 8%;
 }
 .hi-slide .hi-next,
 .hi-slide .hi-prev {
-    position: absolute;
+    position: relative;
     width: 40px;
     height: 40px;
     margin-top: 15%;
@@ -28,13 +29,14 @@
     background-color: white;
 }
 .hi-slide .hi-prev {
-    left: -200px;
+    left: -15%;
 }
 .hi-slide .hi-prev::before {
     content: '<';
 }
 .hi-slide .hi-next {
-    right: -200px;
+    right: -105%;
+    top: -172px;
 }
 .hi-slide .hi-next::before {
     content: '>';

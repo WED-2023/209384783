@@ -8,13 +8,13 @@
         };
         $.extend(true, setting, options);
         var states = [
-            { $zIndex: 1, width: 220, height: 150, top: 69, left: 134, $opacity: 0.2 },
-            { $zIndex: 2, width: 230, height: 170, top: 59, left: 0, $opacity: 0.4 },
-            { $zIndex: 3, width: 270, height: 218, top: 35, left: 110, $opacity: 0.7 },
-            { $zIndex: 4, width: 324, height: 288, top: 0, left: 263, $opacity: 1 },
-            { $zIndex: 3, width: 270, height: 218, top: 35, left: 470, $opacity: 0.7 },
-            { $zIndex: 2, width: 230, height: 170, top: 59, left: 620, $opacity: 0.4 },
-            { $zIndex: 1, width: 220, height: 150, top: 69, left: 500, $opacity: 0.2 }
+            { $zIndex: 1, width: 220, height: 150, top: -21, left: 134, $opacity: 0.2 },
+            { $zIndex: 2, width: 230, height: 170, top: -31, left: 0, $opacity: 0.4 },
+            { $zIndex: 3, width: 270, height: 218, top: -55, left: 110, $opacity: 0.7 },
+            { $zIndex: 4, width: 324, height: 288, top: -90, left: 263, $opacity: 1 },
+            { $zIndex: 3, width: 270, height: 218, top: -55, left: 470, $opacity: 0.7 },
+            { $zIndex: 2, width: 230, height: 170, top: -31, left: 620, $opacity: 0.4 },
+            { $zIndex: 1, width: 220, height: 150, top: -21, left: 500, $opacity: 0.2 }
         ];
 
         var $lis = $ele.find('li');
