@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="stylesheet" type="text/css" href="image_rotator.css" />
+  <link rel="stylesheet" type="text/css" href="video_playlist.css" />
   <script src="https://kit.fontawesome.com/7f6855da14.js" crossorigin="anonymous"></script>
 </head>
 
@@ -72,98 +73,71 @@
 
 <section id="playlist" class="section">
   <h1>  my playlist</h1>
-  <div class="playlist_class">
-    
+  <br/>
+  <div class="video_gallery">
+    <div class="main_video">
+      <div class="video">
+        <iframe height="392" src="https://www.youtube.com/embed/GzT0V21hR1Y?si=0l8UEaMQw22Jq0t4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3 class="title">01. תקציר הניצחון ב-38 הפרש</h3>
+      </div>    
+    </div>
+    <div class="video_list">
+      <div class="vid active">
+        <iframe src="https://www.youtube.com/embed/GzT0V21hR1Y?si=0l8UEaMQw22Jq0t4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3 class="title">01. תקציר הניצחון ב-38 הפרש</h3>
+      </div>
+      <div class="vid">
+        <iframe src="https://www.youtube.com/embed/iJvQS_pzH6U?si=Pm9KZOyXBq682UUC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3 class="title">02. הפועל ת"א - מכבי ת"א 95:96</h3>
+      </div>
+      <div class="vid">
+        <iframe src="https://www.youtube.com/embed/X-fJ9HQTAIM?si=uiO4tV87Lj_0MOeV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3 class="title">03. הפועל ת"א - מכבי ת"א, חצי גמר גביע המדינה</h3>
+      </div>
+      <div class="vid">
+        <iframe src="https://www.youtube.com/embed/zAuFGmcMtgU?si=gUqlWQWhPLgamuMe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3 class="title">04. הפועל תל-אביב - הפועל ירושלים 84:93</h3>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <section id="like" class="section">
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  give me a like
+  <h1>give me a like</h1>
+  <div class="like_button">
+
+  </div>
   <br/>
   <br/>
   <br/>
 </section>
 
 <section id="qrcoder" class="section">
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  scan my code
+  <h1>scan my code</h1>
+  <div class="qr">
+
+  </div>
   <br/>
   <br/>
   <br/>
 </section>
 
 <section id="spa" class="section">
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  ans
+  <h1>questions and answers</h1>
+  <div class="q&a">
+
+  </div>
   <br/>
   <br/>
   <br/>
 </section>
 
 <section id="contact" class="section">
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  contact me
+  <h1>contact me</h1>
+  <div class="contact_me">
+
+  </div>
   <br/>
   <br/>
   <br/>
@@ -195,6 +169,24 @@
   <script src="jquery.hislide.js"></script>
   <script>
     $('.slide').hiSlide();
+  </script>
+  <script>
+    let listVideo = document.querySelectorAll('.video_list .vid');
+    let mainVideo = document.querySelector('.main_video iframe');
+    let title = document.querySelector('.main_video .title');
+
+    listVideo.forEach(video => {
+      video.onclick = () => {
+        listVideo.forEach(vid => vid.classList.remove('active'));
+        video.classList.add('active');
+        if(video.classList.contains('active')) {
+          let src = video.children[0].getAttribute('src');
+          mainVideo.src = src;
+          let text = video.children[1].innerHTML;
+          title.innerHTML = text;
+        };
+      };
+    });
   </script>
   </body>
   </html>
