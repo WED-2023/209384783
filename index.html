@@ -12,7 +12,9 @@
 </head>
 
 <body>
-  <nav>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v19.0" nonce="i8jW5EFC"></script>
+<nav>
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
       <i class="fa-solid fa-bars"></i>
@@ -106,21 +108,17 @@
 <section id="like" class="section">
   <h1>give me a like</h1>
   <div class="like_button">
-
+    <h3>press the like button if you loved this site!</h3>
+    <div class="fb-like" data-href="http://127.0.0.1:5500/index.html" data-width="" data-layout="" data-action="" data-size="large" data-share="true"></div>
   </div>
-  <br/>
-  <br/>
-  <br/>
 </section>
 
 <section id="qrcoder" class="section">
   <h1>scan my code</h1>
   <div class="qr">
-
+    <h3>Share me with your friends!</h3>
+    <img src="images/qrcode.png" alt="">
   </div>
-  <br/>
-  <br/>
-  <br/>
 </section>
 
 <section id="spa" class="section">
