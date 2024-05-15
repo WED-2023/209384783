@@ -103,7 +103,7 @@ a:hover {
 section {
     padding-top: 100px;
 }
-section img {
+section img.top_pic {
 	max-width: 100%;
 	margin-left: 45px;
 	height: 450px;
@@ -145,4 +145,75 @@ section div p {
 	display: block; 
     margin-left: auto; 
     margin-right: auto;
+}
+
+
+.contact_container {
+	height: 100vh;
+	display: flex;
+	justify-content: space-evenly;
+}
+.contact {
+	display: flex;
+	flex-direction: column;
+	/* align-items: start; */
+	gap: 20px;
+}
+.contact_title h3 {
+	font-weight: 600;
+	color: #33b5e5;
+	font-size: 40px;
+	margin-bottom: 5px;
+
+}
+.contact_title hr {
+	border: none;
+	width: 120px;
+	height: 5px;
+	background-color: #33b5e5;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	margin-left: 0; 
+}
+.contact_inputs {
+	width: 400px;
+	height: 50px;
+	border: none;
+	outline: none;
+	padding-left: 25px;
+	font-weight: 500;
+	color: #666;
+	border-radius: 50px;
+}
+/* .contact textarea {
+	height: 140px;
+	padding-top: 150px;
+	border-radius: 20px;
+} */
+.contact_inputs:focus {
+	border: 2px solid #0082e6;
+}
+.contact_inputs::placeholder {
+	color: #a9a9a9;
+}
+.contact button {
+	display: flex;
+	align-items: center;
+	padding: 15px 30px;
+	font-size: 16px;
+	color: #fff;
+	gap: 10px;
+	border: none;
+	border-radius: 50px;
+	background: linear-gradient(270deg, #b3d1ff, #33b5e5);
+	width: 130px;
+	cursor: pointer;
+}
+.contact button img{
+	height: 15px;
+}
+@media (max-width:800px) {
+	.contact_inputs {
+		width: 80vw;
+	}
 }

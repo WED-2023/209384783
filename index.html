@@ -9,6 +9,9 @@
   <link rel="stylesheet" type="text/css" href="image_rotator.css" />
   <link rel="stylesheet" type="text/css" href="video_playlist.css" />
   <script src="https://kit.fontawesome.com/7f6855da14.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css"/>
+
 </head>
 
 <body>
@@ -37,7 +40,7 @@
   <div id="top"></div>
 
   <section>
-      <img class="30_pic" src="images/top_pic.jpeg" alt="30_pic">
+      <img class="top_pic" src="images/top_pic.jpeg" alt="30_pic">
   </section>
 
 <section id="about" class="section"> 
@@ -133,12 +136,19 @@
 
 <section id="contact" class="section">
   <h1>contact me</h1>
-  <div class="contact_me">
-
+  <div class="contact_container">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact">
+      <div class="contact_title">
+        <h3>Get in touch</h3>
+        <hr>
+      </div>
+      <input type="hidden" name="access_key" value="e1366898-f2cd-469f-9307-3c122d93427d">
+      <input type="text" name="name" placeholder="Your Name" class="contact_inputs" required>
+      <input type="email" name="email" placeholder="Your Email" class="contact_inputs" required>
+      <textarea name="message" placeholder="Your Message" class="contact_inputs" id="textarea" required></textarea>
+      <button type="submit">Submit<img src="images/submit_arrow.png" alt=""></button>
+    </form>
   </div>
-  <br/>
-  <br/>
-  <br/>
 </section>
 
 
@@ -186,5 +196,13 @@
       };
     });
   </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
+  <script type="text/javascript">
+    $('#textarea').emojioneArea({
+     pickerPosition:'buttom'
+    });
+  </script>
+  
   </body>
   </html>
