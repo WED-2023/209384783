@@ -146,6 +146,25 @@ section div p {
     margin-left: auto; 
     margin-right: auto;
 }
+section .qa_container div {
+	margin-right: 100px;
+	margin-bottom: 0;
+	font-family: Tahoma, sans-serif;
+	line-height: 1.6;
+}
+section .qa_container h2 {
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 0;
+	font-family: Tahoma, sans-serif;
+	line-height: 1.6;
+}
+section .qa_container .use_case {
+	margin-right: 0;
+	margin-bottom: 0;
+	font-family: Tahoma, sans-serif;
+	line-height: 1.6;
+}
 
 
 .contact_container {
@@ -164,7 +183,6 @@ section div p {
 	color: #33b5e5;
 	font-size: 40px;
 	margin-bottom: 5px;
-
 }
 .contact_title hr {
 	border: none;
@@ -185,11 +203,6 @@ section div p {
 	color: #666;
 	border-radius: 50px;
 }
-/* .contact textarea {
-	height: 140px;
-	padding-top: 150px;
-	border-radius: 20px;
-} */
 .contact_inputs:focus {
 	border: 2px solid #0082e6;
 }
