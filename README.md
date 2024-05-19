@@ -19,7 +19,6 @@ This is a website made especially for the funny character Mr. Bean. The website 
 - **CSS3**
 - **JavaScript**
 - **jQuery**
-- **Bootstrap**
 ## Link to this website:
 open this link in your browser: https://wed-2023.github.io/209384783/.
 ## Personal Information:
