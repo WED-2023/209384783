@@ -11,7 +11,7 @@ This is a website made especially for the funny character Mr. Bean. The website 
 ## Interactive Elements:
 1. **Responsive Navigation Menu:** The navigation menu is responsive and transforms into a mobile-friendly format on smaller screens.
 2. **Image Slider:** The photo gallery has an image slider so you can easily navigate through Mr. Bean's pics.
-3. **ideo Playlist:** The playlist section includes an interactive video gallery where users can switch between different YouTube videos by clicking on the thumbnail images.
+3. **Video Playlist:** The playlist section includes an interactive video gallery where users can switch between different YouTube videos by clicking on the thumbnail images.
 4. **Smooth Scrolling:** The navigation links and logo provide smooth scrolling functionality, allowing users to navigate through the different sections of the website seamlessly.
 5. **Emoji Picker:** A cool emoji picker lets you easily add fun emojis to your messages in the contact form.
 ## Technologies Used:
